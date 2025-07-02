@@ -39,13 +39,13 @@ Exemple :
 
 ```ini
 [all]
-serveur1 ansible_host=192.168.1.100 ansible_user=monuser ansible_ssh_private_key_file=~/.ssh/id_rsa
+serveur1 ansible_host=10.39.20.49 ansible_user=g.poulain ansible_ssh_private_key_file=~/.ssh/id_rsa
 ```
 
 > Remplace :
-> - `192.168.1.100` par l’IP de ta machine distante.
-> - `monuser` par l’utilisateur avec accès SSH.
-> - `~/.ssh/id_rsa` par le chemin de ta clé privée.
+> - `10.39.20.49` par l’IP de ta machine distante.
+> - `g.poulain` par l’utilisateur avec accès SSH.
+> - `~/.ssh/id_rsa` par le chemin de ta clé privée. (en général, il est le même pour tout le monde)
 
 ## 📝 Modification selon ta configuration
 
