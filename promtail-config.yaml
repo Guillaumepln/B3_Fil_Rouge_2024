@@ -14,4 +14,4 @@ scrape_configs:
           - localhost
         labels:
           job: "test-logs"
-          __path__: /home/lourobert/acaton/test.log
+          __path__: B3_Fil_Rouge_2024/test.log
