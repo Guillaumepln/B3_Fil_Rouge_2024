@@ -1,0 +1,7 @@
+- name: Déploiement de base sur les serveurs
+  hosts: all
+  become: yes
+  roles:
+    - python
+    - ansible
+    - podman
