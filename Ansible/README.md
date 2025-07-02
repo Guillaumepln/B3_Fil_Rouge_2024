@@ -62,7 +62,7 @@ Depuis le dossier `ansible-project`, lance :
 ansible-playbook -i inventory.ini site.yml
 ```
 
-> ⚠️ Ajoute `--ask-become-pass` si tu veux que l'utilisateur doive entrer le mot de passe `sudo`.
+> ⚠️ Ajouter `--ask-become-pass` si vous voulez que l'utilisateur doive entrer le mot de passe `sudo`.
 
 ## 📦 Détails des rôles
 
@@ -70,14 +70,10 @@ ansible-playbook -i inventory.ini site.yml
 Installe `python3` via `apt` (Debian/Ubuntu) ou `yum` (RHEL/CentOS).
 
 ### Rôle `ansible`
-Installe `ansible` via `pip3`. (Tu peux modifier pour utiliser `apt` ou `yum` si nécessaire.)
+Installe `ansible` via `pip3`. (Vous pouvez modifier pour utiliser `apt` ou `yum` si nécessaire.)
 
 ### Rôle `podman`
 Installe `podman` avec le gestionnaire de paquets approprié selon la distribution.
-
-## 🧹 Nettoyage (optionnel)
-
-Tu peux supprimer les rôles ou adapter les tâches pour désinstaller des paquets si besoin.
 
 ---
 
@@ -85,7 +81,7 @@ Tu peux supprimer les rôles ou adapter les tâches pour désinstaller des paque
 
 - Utilise `ansible -m ping all -i inventory.ini` pour tester la connectivité.
 - Utilise `ansible-playbook -i inventory.ini site.yml -C` pour simuler (mode check).
-- Tu peux créer un rôle avec : `ansible-galaxy init nom_du_role`.
+- Vous pouvez créer un rôle avec : `ansible-galaxy init nom_du_role`.
 
 ---
 
