@@ -1,0 +1,11 @@
+- name: Installer Python (Debian/Ubuntu)
+  apt:
+    name: python3
+    state: present
+  when: ansible_os_family == "Debian"
+
+- name: Installer Python (RHEL/CentOS)
+  yum:
+    name: python3
+    state: present
+  when: ansible_os_family == "RedHat"
