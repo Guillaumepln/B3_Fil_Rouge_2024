@@ -1,0 +1,11 @@
+- name: Installer Podman (Debian/Ubuntu)
+  apt:
+    name: podman
+    state: present
+  when: ansible_os_family == "Debian"
+
+- name: Installer Podman (RHEL/CentOS)
+  yum:
+    name: podman
+    state: present
+  when: ansible_os_family == "RedHat"
