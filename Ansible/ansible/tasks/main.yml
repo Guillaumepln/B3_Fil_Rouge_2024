@@ -1,0 +1,4 @@
+- name: Installer Ansible via pip
+  pip:
+    name: ansible
+    executable: pip3
